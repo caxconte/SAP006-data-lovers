@@ -1,8 +1,8 @@
 # League Of Legends - Chose Your Champion
 
-![GitHub repo size](https://img.shields.io/github/repo-size/caxconteREADME-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/caxconte/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/caxconte/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/caxconte/SAP006-data-lovers?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/caxconte/SAP006-data-lovers?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/caxconte/SAP006-data-lovers?style=for-the-badge)
 
 > Na aplicação Chose Your Champion, você pode analisar dados como: ataque, defesa, magia e dificuldade de cada campeão do jogo League of Legends, tornando mais fácil a escolha do campeão ideal pra sua jogabilidade.
 
@@ -55,7 +55,7 @@ Eu, como visitante, quero visualizar todos os campeões do LOL em cards e ao cli
 - Tem testes e passa nos testes com 70% de aprovação no minimo
 - Testes de usuário
 
-    ![Separação de Pequenas Tarefas](./src/img/1ahistoria.jpeg)
+    ![Separação de Pequenas Tarefas](./src/img/1ahistoria.jpeg =250x200)
 
 #### **2ª História do Usuário**
 
