@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -7,52 +7,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>League of Legends - Find Your Champion</title>
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+  </head>
 
-</head>
-
-<body>
-
-  <header class="header-img">
-    <img src="./img/lol-header-img.png" alt="Campeã do jogo League of Legends" />
-
-  </header>
-
-  <main class="container">
-    <header class="nav">
-      <input type="text" name="search" class="search" id="search" placeholder="Pesquisa por nome..." />
-
-      <ul class="categorias">
-        <li class="assassin"><a href="#">Assassin</a></li>
-        <li class="support"><a href="#">Support</a></li>
-        <li class="mage"><a href="#">Mage</a></li>
-        <li class="marksman"><a href="#">Marksman</a></li>
-        <li class="tank"><a href="#">Tank</a></li>
-        <li class="fighter"><a href="#">Fighter</a></li>
-        <li class="todos"><a href="#">LIMPAR</a></li>
-      </ul>
-
-
-      <select class="dropbtn">
-        <option value="" disabled selected hidden>Filtrar por dificuldade...</option>
-        <option value="1" class="dropdown-content">Todas as dificuldades</option>
-        <option value="2" class="dropdown-content">Easy</option>
-        <option value="3" class="dropdown-content">Medium</option>
-        <option value="4" class="dropdown-content">Hard</option>
-      </select>
-
-
+  <body>
+    <header class="header-title">
+      <p>Choose Your Champion</p>
     </header>
 
-    <ul class="cards"></ul>
+    <header class="header-img">
+      <img src="./img/lol-header-img.png" alt="Campeã do jogo League of Legends"/>
+    </header>
 
-    <div class="popup-wrapper">
-      <div class="popup">
-        <div class="popup-close"> x </div>
-        <div class="popup-content"></div>
+    <main class="container">
+
+      <nav class="navbar">
+        
+        <button
+          aria-label="Abrir Menu"
+          class="btn-mobile"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false">
+
+          <span class="hamburguer"></span>
+
+          <span id="hamburger"></span>
+        </button>
+
+        <form class="search_input" id="search_input">
+          <input
+            type="text"
+            name="search"
+            class="search"
+            id="search"
+            placeholder="Pesquisa por nome..."
+          />
+        </form>
+
+          <select class="dropbtn" id="dropbtn">
+              <option value="" disabled selected hidden>Filtrar por dificuldade...</option>
+              <option value="1" class="dropdown-content">Todas as dificuldades</option>
+              <option value="2" class="dropdown-content">Easy</option>
+              <option value="3" class="dropdown-content">Medium</option>
+              <option value="4" class="dropdown-content">Hard</option>
+          </select>
+
+          <ul class="menu" role="menu">
+            <li class="todos"><a href="#">All Champions</a></li>
+            <li class="assassin"><a href="#">Assassin</a></li>
+            <li class="support"><a href="#">Support</a></li>
+            <li class="mage"><a href="#">Mage</a></li>
+            <li class="marksman"><a href="#">Marksman</a></li>
+            <li class="tank"><a href="#">Tank</a></li>
+            <li class="fighter"><a href="#">Fighter</a></li>
+          </ul>
+
+      
+      </nav>
+
+      <ul class="cards"></ul>
+
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="popup-close"> x </div>
+          <div class="popup-content"></div>
+            <h4 class="introduction"> Selecting your League of Legends character can be easy, but also informative and fun: </h4>
+
+            <p class="introduction"> With "Choose your Champion", one can evaluate the individual information of each Champion, compare his skills  compared to the average of his peers, and select the champions by class and difficulty level! </p>
+
+            <p class="introduction"> Join us in this adventure! </p>
+
+            <p class="introduction"> To know a little bit more about this game, click 
+              <a href="https://simple.wikipedia.org/wiki/League_of_Legends" target="_blank">this link.</a>
+          </p>
+        </div>
       </div>
-    </div>
-  </main>
+
+    </main>
 
   <footer>
     <p class="authors">
@@ -95,7 +129,10 @@
       </div>
     </div>
   </div>
+
   <script src="main.js" type="module"></script>
+  <script src="nav.js" type="module"></script>
+  
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load('current', { 'packages': ['bar'] });

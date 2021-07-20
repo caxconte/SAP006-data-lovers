@@ -4,10 +4,9 @@ export const filterNames = (Array, string) => {
     return Array.filter(champion => champion.id.toUpperCase().includes(string));
 };
 
-export const filterByTag = function (array, string){ //mudei para string assim, poderíamos usar  qualquer variável como argumento
+export const filterByTag = function (array, string){ 
   return array.filter(champion => champion.tags[0] == string || champion.tags[1] === string)
 };
-
 
 export const difficultyOrder = (array, chosendifficulty) => {  
   const order = (array.slice(0, array.length)).sort((a, b) => (a.info.difficulty - b.info.difficulty))
@@ -26,7 +25,7 @@ export const difficultyOrder = (array, chosendifficulty) => {
       return order.filter(champion => champion.info.difficulty > 7)
            
     default: 
-    window.alert(`Sorry, chose your champion.`)      
+    return array
   }
 }
 

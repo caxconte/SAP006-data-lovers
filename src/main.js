@@ -15,8 +15,10 @@ function listingCards(itens) {
 
     const card = document.createElement("li")
     card.innerHTML = `
-      <img src="${info.splash}" alt="Imagem do Campeão"/>
+
       <h3>${info.id}</h3>
+      <img src="${info.splash}" alt="Imagem do Campeão"/>
+
        `
     cardPack.appendChild(card)
 
@@ -41,10 +43,10 @@ function listingCards(itens) {
         <h3 class="champion-title">${info.title}</h3>
         <div class="champion-data">
           <div class="champion-info">
-            <p>Ataque: ${attack} | 
-            Defesa: ${defense} | 
-            Magia: ${magic} | 
-            Dificuldade: ${difficulty}
+            <p>Attack: ${attack} | 
+            Defense: ${defense} | 
+            Magic: ${magic} | 
+            Difficulty: ${difficulty}
             </p>
           </div>
       
@@ -54,12 +56,9 @@ function listingCards(itens) {
         </div>
 
         <div class="chart">
-
-        <div id="barchart_material" class="chat-cont" style="width: 800px; height: 400px;"></div>
-
+          <div id="barchart_material" class="chart-cont" style="width: 800px; height: 400px;"></div>
         </div>
       `;
-
 
       const grafic = document.querySelector("#barchart_material")
       grafic.innerHTML = `
@@ -78,11 +77,11 @@ function listingCards(itens) {
         const medDiff = mediaInfo(tagSelection, 'difficulty')
 
         const data = google.visualization.arrayToDataTable([
-          ['HABILIDADES', `${info.id}`, `${tagChampion}`, 'Máximo'],
-          ['ATAQUE', attack, medAtt, 10],
-          ['DEFESA', defense, medDef, 10],
-          ['MAGIA', magic, medMag, 10],
-          ['DIFICULDADE', difficulty, medDiff, 10]
+          ['ABILITY', `${info.id}`, `${tagChampion}`, 'MAX'],
+          ['ATTACK', attack, medAtt, 10],
+          ['DEFENSE', defense, medDef, 10],
+          ['MAGIC', magic, medMag, 10],
+          ['DIFFICULTY', difficulty, medDiff, 10]
         ]);
 
 
@@ -139,11 +138,11 @@ searchName.addEventListener('input', event => {
 
 let filtered = dataLol
 
-const filterButton = document.querySelector(".categorias")
+const filterButton = document.querySelector(".menu")
 filterButton.addEventListener('click', (event) => {
   const botaoClicado = event.target.textContent
 
-  if (botaoClicado == "LIMPAR") {
+  if (botaoClicado == "All Champions") {
     filtered = dataLol
   } else {
     filtered = filterByTag(dataLol, botaoClicado)
