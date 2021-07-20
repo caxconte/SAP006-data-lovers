@@ -106,20 +106,12 @@ Quero ordenar por dificuldade e fazer um calculo agregado
 
 ![Pop-Up Baixa Fidelidade](./src/img/popup-low-fidelity.jpeg)
 
-## 4. Protótipos de Alta Qualidade
+## 4. Protótipos de Alta Fidelidade
 
 ![Landing Page Alta Fidelidade](./src/img/desktop-prototype.png/)
 
 ![Pop-Up Alta Fidelidade](./src/img/popup-preview.jpeg)
 
-![Mobile Landing Page Alta Fidelidade](./src/img/mobile-prototype.png)
-
-![Landing Page Baixa Fidelidade](./src/img/landing-page-low-fidelity.jpeg)
-![Pop-Up Baixa Fidelidade](./src/img/popup-low-fidelity.jpeg)
-
-## 4. Protótipos de Alta Qualidade
-![Landing Page Alta Fidelidade](./src/img/desktop-prototype.png/)
-![Pop-Up Alta Fidelidade](./src/img/popup-preview.jpeg)
 ![Mobile Landing Page Alta Fidelidade](./src/img/mobile-prototype.png)
 
 ## 5. Problemas Detectados nos Testes de Usabilidade
