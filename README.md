@@ -1,8 +1,8 @@
 # League Of Legends - Chose Your Champion
 
-![GitHub repo size](https://img.shields.io/github/repo-size/caxconteREADME-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/caxconte/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/caxconte/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/caxconte/SAP006-data-lovers?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/caxconte/SAP006-data-lovers?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/caxconte/SAP006-data-lovers?style=for-the-badge)
 
 > Na aplicação Chose Your Champion, você pode analisar dados como: ataque, defesa, magia e dificuldade de cada campeão do jogo League of Legends, tornando mais fácil a escolha do campeão ideal pra sua jogabilidade.
 
@@ -113,6 +113,14 @@ Quero ordenar por dificuldade e fazer um calculo agregado
 ![Pop-Up Alta Fidelidade](./src/img/popup-preview.jpeg)
 
 ![Mobile Landing Page Alta Fidelidade]("./src/img/mobile-prototype.png")
+
+![Landing Page Baixa Fidelidade](./src/img/landing-page-low-fidelity.jpeg)
+![Pop-Up Baixa Fidelidade](./src/img/popup-low-fidelity.jpeg)
+
+## 4. Protótipos de Alta Qualidade
+![Landing Page Alta Fidelidade](./src/img/desktop-prototype.png/)
+![Pop-Up Alta Fidelidade](./src/img/popup-preview.jpeg)
+![Mobile Landing Page Alta Fidelidade](./src/img/mobile-prototype.png)
 
 ## 5. Problemas Detectados nos Testes de Usabilidade
 
