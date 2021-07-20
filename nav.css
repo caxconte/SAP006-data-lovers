@@ -1,0 +1,213 @@
+.btn-mobile {
+  display: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 46px
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: auto;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0px 2px 5px #000000;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border-top: rgba(23, 24, 32, 0.8);
+  box-sizing: initial;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+/********* PARTE DAS CATEGORIAS *********/
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  gap: .5rem;
+  margin-right: 10px;
+  z-index: 80000000;
+}
+
+.menu li a {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem;
+  
+}
+
+
+.menu li a:hover {
+  color: #ffc700;
+}
+
+.menu li a .title {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  height: 50px;
+  line-height: 50px;
+  white-space: normal;
+}
+
+@media screen and (max-width: 930px) {
+  .btn-mobile {
+    display: flex;
+    z-index: 5;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .hamburguer {
+    width: 20px;
+    border-top: 2px solid;
+    gap: 1rem;
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .hamburguer::after, .hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background: currentColor;
+    transition: .3s;
+    position: relative;
+  }
+
+  .menu {
+    display: block;
+    width: 100%;
+    left: 0;
+    background: #ffc700;
+    z-index: 20000;
+    height: 0px;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    z-index: 80000000;
+  }
+
+  .menu li a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    color: #171820;
+    z-index: 80000000;
+  }
+
+  .menu li:hover, .menu li a:hover {
+    color: #ffc700;
+    background-color: #171820;
+    z-index: 80000000;
+  }
+
+  .navbar.active .menu{
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+    z-index: 80000000;
+  }
+
+  .navbar.active .hamburguer {
+    border-top-color: transparent;
+  }
+
+  .navbar.active .hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  .navbar.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+/********** PARTE DO DROPDOWN DE DIFICULDADE **********/
+
+.dropbtn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropdown-content {
+  background-color: #171820;
+}
+
+.dif-icon span {
+  display: none;
+}
+
+@media screen and (max-width: 340px) {
+  .dif-icon span {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+
+}
+
+/********** PARTE DA BUSCA **********/
+
+input {
+  outline: none;
+}
+
+input[type=text] {
+  -webkit-appearance: textfield;
+  font-family: inherit;
+  font-size: 100%;
+  color: #fff;
+  margin-left: 0;
+
+  background: rgba(23, 24, 32, 0.8) url("./img/search-icon.png") no-repeat 9px center;
+  background-size: 20px;
+  border: none;
+  padding: 9px 10px 9px 32px;
+  width: 40px;
+  color: #fff;
+
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; 
+}
+
+input[type=text]:focus {
+  width: 215px;
+  background-color: #171820;
+  border-color: #fff;
+  padding-left: 32px;
+  color: #fff;
+
+  -webkit-box-shadow: 0 0 5px #8985fb7c;
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px #8985fb7c;
+}
