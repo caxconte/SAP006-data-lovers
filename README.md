@@ -55,7 +55,7 @@ Eu, como visitante, quero visualizar todos os campeões do LOL em cards e ao cli
 - Tem testes e passa nos testes com 70% de aprovação no minimo
 - Testes de usuário
 
-    ![Separação de Pequenas Tarefas]("./src/img/1ahistoria.jpeg")
+    ![Separação de Pequenas Tarefas](./src/img/1ahistoria.jpeg)
 
 #### **2ª História do Usuário**
 
@@ -71,7 +71,7 @@ Depois de receber as informações do campeão selecionado, quero buscar um camp
 - Tem testes e passa nos testes com 70% de aprovação no minimo
 - Testes de usuário
 
-    ![Separação de Pequenas Tarefas]("./src/img/2ahistoria.jpeg")
+    ![Separação de Pequenas Tarefas](./src/img/2ahistoria.jpeg)
 
 ####  **3ª História do Usuário**
 
@@ -87,17 +87,17 @@ Quero ordenar por dificuldade e fazer um calculo agregado
 - Tem testes e passa nos testes com 70% de aprovação no minimo
 - Testes de usuário
 
-![Separação de Pequenas Tarefas]("./src/img/3ahistoria.jpeg")
+![Separação de Pequenas Tarefas](./src/img/3ahistoria.jpeg)
 
 
 ## 3. Protótipos de Baixa Fidelidade
-![Landing Page Baixa Fidelidade]("./src/img/landing-page-low-fidelity.jpeg")
-![Pop-Up Baixa Fidelidade]("./src/img/popup-low-fidelity.jpeg)
+![Landing Page Baixa Fidelidade](./src/img/landing-page-low-fidelity.jpeg)
+![Pop-Up Baixa Fidelidade](./src/img/popup-low-fidelity.jpeg)
 
 ## 4. Protótipos de Alta Qualidade
-![Landing Page Alta Fidelidade]("./src/img/desktop-prototype.png/)
+![Landing Page Alta Fidelidade](./src/img/desktop-prototype.png/)
 ![Pop-Up Alta Fidelidade](./src/img/popup-preview.jpeg)
-![Mobile Landing Page Alta Fidelidade]("./src/img/mobile-prototype.png")
+![Mobile Landing Page Alta Fidelidade](./src/img/mobile-prototype.png)
 
 ## 5. Problemas Detectados nos Testes de Usabilidade
 
