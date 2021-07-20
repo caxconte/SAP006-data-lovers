@@ -159,7 +159,7 @@ categories.addEventListener("change", (event) => {
 })
 
 function iniciaModal(modalID) {
-  if (localStorage.closeModal !== modalID) {
+  // if (localStorage.closeModal !== modalID) {
     const modal = document.getElementById(modalID)
     if (modal) {
       modal.classList.add("mostrar")
@@ -171,14 +171,14 @@ function iniciaModal(modalID) {
         }
       })
     }
-  }
+  // }
 }
 
 const openInfo = document.querySelector(".header-img")
 openInfo.addEventListener('click', () => iniciaModal("modal-informacao"))
 
 document.addEventListener('scroll', () => {
-  if (window.pageYOffset > 800) {
+  if (window.pageYOffset > 100) {
     iniciaModal("modal-informacao")
-  }
-})
+    }
+}) 
